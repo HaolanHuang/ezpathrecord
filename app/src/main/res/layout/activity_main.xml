@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="cn.bluemobi.dylan.step.activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp">
+        <!--android:background="@mipmap/step_bg"-->
+
+        <TextView
+            android:id="@+id/tv_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="40dp"
+            android:drawableLeft="@mipmap/home_statistical"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="查看历史步数"
+            android:textColor="#333333" />
+
+        <cn.bluemobi.dylan.step.view.StepArcView
+            android:id="@+id/cc"
+            android:layout_width="173dp"
+            android:layout_height="149dp"
+            android:layout_below="@+id/tv_data"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="62dp" />
+
+        <TextView
+            android:id="@+id/tv_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="40dp"
+            android:drawableLeft="@mipmap/home_question_mark"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:text="设置锻炼计划"
+            android:textColor="#333333" />
+
+        <TextView
+            android:id="@+id/tv_isSupport"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="95dp"
+            android:text="该设备支持计步"
+            android:textColor="#333333" />
+
+        <Button
+            android:id="@+id/startRun"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="跑步" />
+
+        <TextView
+            android:id="@+id/MainJourney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="31dp"
+            android:layout_marginBottom="158dp"
+            android:text="路程"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/journeyNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/MainJourney"
+            android:layout_alignTop="@+id/runTime"
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="0dp"
+            android:text="0.0"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/kilometer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/journeyNum"
+            android:layout_marginStart="0dp"
+            android:layout_marginBottom="0dp"
+            android:layout_toEndOf="@+id/journeyNum"
+            android:text="@string/kilo"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/MainTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/MainJourney"
+            android:layout_marginStart="133dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/MainJourney"
+            android:text="时间"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/runTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/MainTime"
+            android:layout_alignStart="@+id/MainTime"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="1dp"
+            android:text="00:00:00"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="42dp"
+            android:layout_height="57dp"
+            android:layout_alignTop="@+id/MainTime"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/runTime"
+            app:srcCompat="@mipmap/next" />
+
+        <TextView
+            android:id="@+id/RunningRecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/MainJourney"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginBottom="15dp"
+            android:text="跑步记录"
+            android:textColor="@color/cardview_dark_background" />
+
+        <ImageView
+            android:id="@+id/imageRun"
+            android:layout_width="25dp"
+            android:layout_height="24dp"
+            android:layout_alignEnd="@+id/RunningRecord"
+            android:layout_alignBottom="@+id/RunningRecord"
+            android:layout_marginEnd="61dp"
+            android:layout_marginBottom="0dp"
+            app:srcCompat="@mipmap/run" />
+
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

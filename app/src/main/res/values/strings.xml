@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">带运动轨迹的简单计步器</string>
+    <string name = "AMap_key">7fa01da6f71fd678b2faff3a529c1d6c</string>
+    <string name="kilo">米</string>
+    <string name="distance">0</string>
+    <string name="exerciseTime">运动时间</string>
+    <string name="time">00:00:00</string>
+    <string name="stopRun">结束</string>
+    <string name="RunToggleBtnOff">开始</string>
+    <string name="RunToggleBtnOn">结束</string>
+    <string name="lookPath">查看足迹</string>
+    <string name="share_content">BigBang，不止是分词！更是您的高效助手！单击、双击、长按、复制等多种触发方式随心选！更有全局复制，图片识别等黑科技加持，给你的手机插上翅膀！</string>
+</resources>

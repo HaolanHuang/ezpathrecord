@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="vertical"
+    android:padding="5dp">
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/rd_distance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/number"
+            android:textColor="@color/textColor"
+            android:textSize="28sp" />
+
+        <TextView
+            android:id="@+id/KM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/rd_distance"
+            android:layout_toEndOf="@+id/rd_distance"
+            android:text="@string/kilo"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/historyTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/KM"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/number"
+            android:textColor="@color/textColor"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/lookPath"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/historyTime"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="34dp"
+            android:layout_marginBottom="0dp"
+            android:text="@string/lookPath"
+            android:textColor="@color/colorAccent" />
+    </RelativeLayout>
+
+
+</LinearLayout>
